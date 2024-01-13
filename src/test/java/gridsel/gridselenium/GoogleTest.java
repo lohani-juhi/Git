@@ -12,11 +12,11 @@ public class GoogleTest {
 	@Test
 	public void HomePageCheck() throws MalformedURLException {
 		DesiredCapabilities caps=new DesiredCapabilities();
-		caps.setBrowserName("chrome");
+		caps.setBrowserName("firefox");
 		WebDriver driver=new RemoteWebDriver(new URL("http://192.168.1.12:4444"),caps);
-		driver.get("http://google.com");
+		driver.get("http://rahulshetty.com");
 		System.out.println(driver.getTitle());
-		driver.findElement(By.name("q")).sendKeys("juhi lohani");
+		driver.findElement(By.name("q")).sendKeys("juhi");
 	
 	}
 }
