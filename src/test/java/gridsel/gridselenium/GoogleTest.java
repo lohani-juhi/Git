@@ -17,6 +17,8 @@ public class GoogleTest {
 		driver.get("http://rahulshetty.com");
 		System.out.println(driver.getTitle());
 		driver.findElement(By.name("q")).sendKeys("juhi");
+
+
 	
 	}
 }
