@@ -13,8 +13,7 @@ public class RSATest {
 		DesiredCapabilities caps=new DesiredCapabilities();
 		caps.setBrowserName("firefox");
 		WebDriver driver=new RemoteWebDriver(new URL("http://192.168.1.12:4444"),caps);
-		driver.get("http://rahulshettyacademy.com");
+		driver.get("http://google.com");
 		System.out.println(driver.getTitle());
-		driver.close();
 	}
 }
